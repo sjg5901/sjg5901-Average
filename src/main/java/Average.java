@@ -18,6 +18,17 @@ public class Average {
      * @return the average of all the values of nums.
      */
     public double getAvg(int[] nums){
-        return 0;
+        
+        // code for calculating sum of array
+        // sum as a double will cause implicit casting in avg calculation later
+
+        double sum = 0;
+
+        for (int num : nums) { sum += num; }
+
+
+        // could declare variable --> double avg = sum / nums.length;
+
+        return sum / nums.length;
     }
 }
